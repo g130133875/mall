@@ -1,11 +1,20 @@
 <template>
-  <h1>购物车</h1>
+  <div class="car-nav-bar">
+    <nav-bar>
+      <div slot="center">购物车</div>
+    </nav-bar>
+  </div>
 </template>
 <script>
+import NavBar from '@/components/common/navbar/NavBar.vue'
 export default {
-  name: 'Shopcar'
+  name: 'Shopcar',
+  components: {
+    NavBar
+  }
 }
-</script>
+
+    NavBar</script>
 <style scoped>
 
 </style>
