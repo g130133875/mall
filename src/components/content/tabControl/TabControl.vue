@@ -28,6 +28,7 @@ export default {
   methods: {
     tabItemClick(index) {
       this.currentIndex = index;
+      this.$emit('tabClick', index)
     }
   }
 }
