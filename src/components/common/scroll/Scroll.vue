@@ -32,7 +32,7 @@ export default {
     //1. 创建BScroll对象
     this.scroller = new BScroll(this.$refs.wrapper, {
       probeType: this.probeType,
-      observeDOM: true,
+      // observeDOM: true,
       click: true,
       pullUpLoad: true
     })
@@ -50,6 +50,9 @@ export default {
   methods: {
     scrollTo(x, y, time=300) {
       this.scroller.scrollTo(x, y, time)
+    },
+    finishPullUp() {
+      this.scroller.finishPullUp()
     }
   }
 }
