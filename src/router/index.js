@@ -4,6 +4,7 @@ const Home = () => import('@/views/home/Home')
 const Category = () => import('@/views/category/Category')
 const Profile = () => import('@/views/profile/Profile')
 const Shopcar = () => import('@/views/shopcar/Shopcar')
+const Detail = () => import('@/components/content/detail/Detail')
 Vue.use(VueRouter)
 //push
 const VueRouterPush = VueRouter.prototype.push
@@ -36,6 +37,10 @@ const routes = [
   {
     path: '/shopcar',
     component: Shopcar
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
   }
 ]
 

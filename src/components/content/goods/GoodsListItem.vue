@@ -1,5 +1,5 @@
 <template>
-  <div class="goods-item">
+  <div class="goods-item" @click="toDetail">
     <img :src="goodsItem.show.img" alt="">
     <div>
       <p>{{goodsItem.title}}</p>
@@ -17,6 +17,11 @@ export default {
       default() {
         return {}
       }
+    }
+  },
+  methods: {
+    toDetail() {
+      this.$router.push('/detail/'+this.goodsItem.iid)
     }
   }
 }
